@@ -1,0 +1,229 @@
+<!--Header -->
+<header>
+  <nav class="navbar  navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="brainnut-nav-wrapper">
+        <div class="navbar-header">
+          <!--Collaps btn -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#brainnut-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <span><button *ngIf="conecter==true" id="btn-inscrire" type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#modal_inscrire" > <b>إنشاء حساب جديد</b></button></span> 
+          <span><button  *ngIf="conecter==true" id="btn-connecter" type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#modal_connecter"><b> تسجيل الدخول</b></button></span>
+          <div  *ngIf="conecter==false" class="app-profile">
+              <h4 style="    font-size: 21px;
+              margin-left: 13%;
+              margin-top: 1%;"> الصفحة الشخصية</h4>
+          
+            </div>
+        </div>
+
+        <!--/Logo-->
+    <div class="collapse navbar-collapse nav-top-button" id="brainnut-menu">
+        <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="عما تبحث؟
+               ">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>   
+                      <ul class="nav navbar-nav entet-etudiant">
+                         
+                        <li>
+                          <a routerLink=''>اطرح أسئلتك على طبيبنا</a>
+                        </li>
+                          <li>
+                            <a routerLink=''> المدونة الطبية</a>
+                          </li>
+                                                    <li class="">
+                            <a routerLink=''>إستقبال</a>
+                          </li>
+
+
+                          
+<!--                         <li *ngIf="token !=null">
+                              <a class="dropdown">Mon Profil 
+                              <i class="fa fa-caret-down"></i>
+                             
+                              <div class="dropdown-content">
+                                <a routerLink='/accueil' ><b style="font-size:  initial;">Accueil</b></a><br>
+                                <a routerLink='/profil'><b style="font-size:  initial;">Mon compte</b></a><br>
+                                <a href="#"><b style="font-size:  initial;">Mon réservations</b></a> <br>
+                                <a href="#"> <b style="font-size:  initial;">Liste de favoris</b></a><br>
+                                <a href="#"><b style="font-size:  initial;">Historique de recherche</b></a><br>
+                                <a (click)="logout()" > <b style="font-size:  initial;">Déconnexion</b></a><br>
+                              </div>
+                            </a>
+                          </li>  -->
+              
+                        </ul>
+                       
+          <!--Logo-->
+          <a class="navbar-brand" href="#home">
+            <img src="" class=" img-responsive" style="width:130px ; padding-top: 0" alt="Logo">
+          </a>
+       </div> 
+
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- / end of Header -->
+
+
+<!-- s'inscrire modal-->
+<div class="modal fade" id="modal_inscrire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+
+          <div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="    margin-top: 20px;"  (click)="clickme()" >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>  
+          <div style="margin-top: -52px;">
+
+                <div class="main">             
+                  <h3>إنشاء حساب جديد</h3>       
+                 <!--    -->        
+                  <form  class="login-form">
+                        <div class="form-group">
+                        <p align="right"><label >اسم </label></p>  
+                          <input type="text" class="form-control"  required />
+                        </div>
+                    
+                    <div class="form-group">
+                     <p align="right"> <label >البريد الإلكتروني</label></p>
+                      <input type="email" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                      <p align="right">   <label>كلمة السر</label></p>
+                      <input type="password" class="form-control"  required/>
+                      </div>
+                      <div class="form-group">
+                        <div class="icon-addon addon-lg">
+                          <p   align="right"><label style=" font-family: 'Lato', sans-serif;">رقم الهاتف</label></p>  
+                            <int-phone-prefix [locale]="'tn'"  ></int-phone-prefix>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                      <div class="icon-addon addon-lg">
+                         
+                       <p align="right"> كمريض <input type="checkbox" id="check" value="maladie" name="check"checked > </p>  
+                       <p align="right">  كطبيب &nbsp;<input type="checkbox" id="check" value="doctor" name="check"></p> 
+                      </div>
+                  </div> 
+                    <div align="center">
+                      <input type="submit" class="btn btn btn-primary" style="
+                      color: #fff;
+                      width: 50%;
+                      height: 52px;
+                      background-color: #17BFB5;
+                      border-color: #17BFB5;
+                      text-align: center;
+                  " value=" الدخول "/>
+                     
+                  
+                   </div>
+                  
+
+                  </form>
+                  <div class="login-or">
+                      <hr class="hr-or">
+                      <span class="span-or">أو</span>
+                    </div>
+                  <div class="row">
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a href="#" class="btn btn-lg btn-primary btn-block" style="    border-color: #17bfb5;
+                        background-color: rgba(255,255,255,.15);
+                        color: #17bfb5;">S'identifier via<br>Facebook</a>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a href="#" class="btn btn-lg btn-info btn-block" style="border-color: #17bfb5;
+                        background-color: rgba(255,255,255,.15);
+                        color: #17bfb5;">S'identifier via<br>Google</a>
+                      </div>
+                    </div>
+                
+                </div>
+                
+              </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- se connecter modal -->
+<div class="modal fade" id="modal_connecter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <div style="margin-top: -52px;">
+
+              <div class="main">             
+                <h3> تسجيل الدخول</h3>                
+                <form>  
+                  <div class="form-group">
+                    <p align="right"> <label >البريد الإلكتروني</label></p>
+                    <input type="email" class="form-control" name="login" [(ngModel)]="user.login" required />
+                  </div>
+                  <div class="form-group">
+                    <p align="right">   <label>كلمة السر</label></p>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="user.password"  required/>
+                    <p>
+                      <a href="#" style="color: #17BFB5 ;"> هل نسيت كلمة المرور؟
+                      </a>
+                    </p>
+                  </div>
+                  <div align="center">
+                    <input type="submit" class="btn btn btn-primary" style="
+                    color: #fff;
+                    width: 50%;
+                    height: 52px;
+                    background-color: #17BFB5;
+                    border-color: #17BFB5;
+                    text-align: center;
+                " value=" الدخول " (click)="login()"/>
+                   
+                
+                 </div>
+                </form>
+                <div class="login-or">
+                  <hr class="hr-or">
+                  <span class="span-or">أو</span>
+                </div>
+              <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <a href="#" class="btn btn-lg btn-primary btn-block" style="    border-color: #17bfb5;
+                    background-color: rgba(255,255,255,.15);
+                    color: #17bfb5;">S'identifier via<br>Facebook</a>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <a href="#" class="btn btn-lg btn-info btn-block" style="border-color: #17bfb5;
+                    background-color: rgba(255,255,255,.15);
+                    color: #17bfb5;">S'identifier via<br>Google</a>
+                  </div>
+                </div>        
+              </div>               
+            </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+

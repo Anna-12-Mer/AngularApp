@@ -1,0 +1,47 @@
+@-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+    }
+    
+  }
+  
+  .btn {
+    position: relative;
+  
+    border: 0 !important;
+    &:focus { outline: 0; }
+    &:hover { top: 2px; }
+    &:active { top: 6px; }
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold !important;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+  
+  .carousel-inner .item > img {
+    -webkit-animation: zoom 20s;
+    animation: zoom 20s;
+  }
+  
+  .carousel-caption{
+    text-align: center;
+  
+  }
+  .main-text
+  {
+      position: absolute;
+      top: 50px;
+      width: 96.66666666666666%;
+      color: #FFF;
+  }

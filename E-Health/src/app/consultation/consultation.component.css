@@ -1,0 +1,389 @@
+
+.menu-button {
+  float: right;
+  margin: 36px;
+  margin-right: 10%;
+}
+
+.menu-button a {
+  margin-left: 60px;
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
+.app-profile {
+  height: 53px;
+  width: 200px;
+  background: #efd0ca;
+  border-radius: 9px;
+  float: left;
+  margin-left: 4%;
+  margin-top: 20px;
+}
+
+.app-profil h4 {
+  margin: 40px;
+  margin-top: 25px;
+}
+
+.img-profile {
+  width: 45px;
+  height: 45px;
+  margin: 4px;
+  float: right;
+  border-radius: 39px;
+}
+
+.img-flech {
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+  margin-top: -42px;
+  float: left;
+  margin-left: 20px;
+}
+
+.app-patient {
+  background: #d28884;
+  width: 100%;
+  height: 190px;
+  margin-top: 59px;
+}
+
+.app-patient .img-profile {
+  width: 100px;
+  height: 100px;
+  margin: 41px;
+  float: right;
+  margin-right: 20%;
+  border-radius: 100px;
+}
+
+.app-location {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-left: 16px;
+  margin-top: 65px;
+  margin-right: -282px;
+}
+
+.logo-patient h2 {
+  margin: 36px;
+  float: right;
+}
+
+.logo-patient h3 {
+  float: right;
+  margin-top: 60px;
+  margin-right: -244px;
+  font-size: 25px;
+}
+
+.logo-patient h6 {
+  float: right;
+  margin-top: 73px;
+  margin-right: -266px;
+  font-size: 25px;
+}
+
+.app-formulaire {
+  height: 100px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 19px;
+}
+
+.app-consultation h1 {
+
+  margin-top: 50px;
+}
+
+.app-consultation hr {
+  width: 428px;
+  margin-right: -14px;
+}
+.app-Specialite  label{
+  font-weight: 700;
+    font-size: 18px;
+}
+.app-Specialite select {
+  background: #e2837f;
+  margin-right: 23px;
+  border-radius: 7px;
+  height: 35px;
+}
+
+.app-docteur {
+  margin-top: 20px;
+}
+.app-docteur  label{
+  font-weight: 700;
+    font-size: 18px;
+}
+.app-docteur select {
+  background: #e2837f;
+  margin-right: 36px;
+  border-radius: 7px;
+  height: 35px;
+  width: 228px;
+}
+
+.app-question {
+  margin-top: 20px;
+}
+.app-question  label{
+  font-weight: 700;
+    font-size: 18px;
+}
+.app-question textarea {
+  margin-top: 8px;
+  border-radius: 7px;
+  width: 287px;
+  height: 122px;
+}
+
+.app-dossier {
+  margin-top: 20px;
+}
+
+.app-dossier button {
+  margin-top: 8px;
+}
+.app-information1 h1 {
+  margin-top: 23px;
+}
+
+
+.app-information1 hr {
+  width: 428px;
+  margin-right: -14px;
+}
+.app-information h1 {
+  margin-top: 70px;
+}
+
+
+.app-information hr {
+  width: 428px;
+  margin-right: -14px;
+}
+
+.information-personnel {
+  margin-top: 20px;
+}
+.information-personnel label{
+  font-weight: 700;
+    font-size: 18px;
+}
+.information-personnel mat-checkbox {
+  margin-right: 36px;
+  border-radius: 7px;
+  height: 35px;
+  width: 228px;
+  margin-right: 86px;
+  font-weight: 700;
+    font-size: 18px;
+
+
+}
+
+.info-taille {
+  margin-top: 20px;
+}
+.info-taille label{
+  font-weight: 700;
+    font-size: 18px;
+}
+.info-taille input {
+  margin-right: 77px;
+  height: 35px;
+  width: 50px;
+  border-radius: 7px;
+}
+
+.info-Longueur {
+  margin-top: 20px;
+}
+.info-Longueur label{
+  font-weight: 700;
+    font-size: 18px;
+}
+.info-Longueur input {
+  margin-right: 77px;
+  height: 35px;
+  width: 50px;
+  border-radius: 7px;
+}
+.info-t{
+  margin-top: 20px;
+}
+.info-t mat-radio-button {
+  margin-right: 36px;
+  border-radius: 7px;
+  height: 35px;
+  margin-right: 56px;
+  font-weight: 700;
+    font-size: 18px;
+}
+.info-t1{
+  margin-top: 20px;
+}
+.info-t1 mat-radio-button {
+  margin-right: 36px;
+  border-radius: 7px;
+  height: 35px;
+  margin-right: 56px;
+  font-weight: 700;
+    font-size: 18px;
+}
+.info-t2{
+  margin-top: 20px;
+}
+.info-t2 textarea {
+  margin-top: 20px;
+  margin-right: 36px;
+  border-radius: 7px;
+  height: 35px;
+  margin-right: 56px;
+  font-weight: 700;
+    font-size: 18px;
+}
+.info-coeur{
+  margin-top: 20px;
+}
+.info-coeur input {
+  margin-right: 50px;
+  height: 35px;
+  width: 50px;
+  border-radius: 7px;
+}
+.info-tension{
+  margin-top: 20px;
+}
+.info-tension input {
+  margin-right: 55px;
+  height: 35px;
+  width: 50px;
+  border-radius: 7px;
+}
+.info-temp{
+  margin-top: 20px;
+}
+.info-temp input {
+  margin-right: 36px;
+  border-radius: 7px;
+  height: 35px;
+  width: 228px;
+  margin-right: 86px;
+  font-weight: 700;
+    font-size: 18px;
+}
+.info-temp label{
+  font-weight: 700;
+    font-size: 18px;
+}
+.info-temp input {
+  margin-right: 36px;
+  height: 35px;
+  width: 50px;
+  border-radius: 7px;
+}
+
+.info-pays {
+  margin-top: 20px;
+}
+.info-pays label{
+  font-weight: 700;
+    font-size: 18px;
+}
+.info-pays input {
+  margin-right: 77px;
+  height: 35px;
+  width: 50px;
+  border-radius: 7px;
+}
+
+
+.information-personnel mat-radio-button {
+  margin-right: 36px;
+  border-radius: 7px;
+  height: 35px;
+  margin-right: 56px;
+  font-weight: 700;
+    font-size: 18px;
+
+}
+.btn-send {
+  background: #17bfb5;
+  width: 70%;
+  height: 44px;
+  border-radius: 12px;
+  border-color: #17bfb5;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 84px;
+}
+.app-basEcran{
+  background: #a59c9a;
+  width: 337%;
+  margin-right: -474px;
+  height:265px;
+  margin-top: 141px;
+}
+.app-basEcran h1{
+
+float: right;
+margin-top: 61px;
+margin-right: 190px;
+}
+.app-h1{
+  float: right;
+    margin-top: -2px;
+  margin-right: 190px;
+}
+.app-tel h1{
+  float: right;
+  margin-right: 220px
+}
+.app-tel h3{
+  float: right;
+    margin-top: 96px;
+    margin-right: -91px;}
+
+.app-mail h3{
+  float: right;
+  margin-top: 139px;
+  margin-right: -133px;}
+
+  .app-fin{
+    float: right;
+    margin-top: 167px;
+    margin-right: -549px;
+  }
+  .app-fin h2{
+    color: #3e3c3c8c;
+  }
+  .img-drapo{
+    width: 42px;
+    margin-top: 188px;
+    margin-right: -326px;
+    border-radius: 7px;
+  }
+
+  #home-cover {
+    height: 282%;
+    width: 100%;
+    background-image: url(../../assets/image-prini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+
+  

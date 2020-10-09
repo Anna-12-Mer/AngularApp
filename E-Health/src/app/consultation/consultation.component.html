@@ -1,0 +1,131 @@
+
+  <div id="home-cover">      
+        <div class="app-patient">
+          <img src="../../assets/icone.jpg" class="img-profile"/>
+          <div class="logo-patient">
+            <h2>Yasmin Ben Hlima</h2><br>
+            <img src="../../assets/location.png" class="app-location">
+            <h3>Sfax, TUNIS</h3><br>
+            <h6>yasmin@gmail.com</h6>
+          </div>
+        </div>
+        <div class="app-form" dir="rtl">
+        <div class="app-formulaire" dir="rtl">
+          <div class="app-consultation" dir="rtl">
+            <h1>طلب إستشارة</h1>
+            <hr>
+            <br>
+            <div class="app-Specialite">
+              <label>تخصص</label>
+              <select>
+                <option value="تخصص">تخصص</option>
+        
+                <option value="t1">الجراحة العامة</option>
+                <option value="t2">الروماتيزم</option>
+                <option value="t3">حالات الطوارئ</option>
+                <option value="t4">طب الأنف و الأذن و الحنجرة</option>
+                <option value="t5">جراحاة العظام و الكسور</option>
+                <option value="t6">جراحاة الوجه و الفكين</option>
+                <option value="t7">الطب النفسي و الطب النفسي الأطفال والمراهقين</option>
+                <option value="t8">طب الأسنان</option>
+                <option value="t9">طب الأطفال</option>
+                <option value="t10">طب الرئة‏</option>
+                <option value="t11">طب الكبد‏</option>
+                <option value="t12">طب الكلى‏‏</option>
+                <option value="t13">طب النساء</option>
+                <option value="t14">طب العيون</option>
+                <option value="t15">طب باطني</option>
+                <option value="t16">طب القلب‏</option>
+              </select>
+            </div>
+            <div class="app-docteur">
+              <label>طبيب</label>
+              <select>
+                <option value="طبيب">طبيب</option>
+        
+                <option value="d1">Dr. Amine</option>
+                <option value="d2">Dr. Kais</option>
+                <option value="d3">Dr. Salma</option>
+        
+              </select>
+            </div><div class="app-question">
+              <label>الأسئلة</label><br>
+            <div class="info-temp">
+              <label>درجة الحرارة</label><input type="number" name="temp">
+             </div>
+             <div class="info-coeur">
+             <label>دقات القلب</label><input type="number" name="coeur">
+            </div>
+            <div class="info-tension">
+              <label> ضغط الدم</label><input type="number" name="tension">
+             </div>
+        
+            <div class="info-t">
+              <label>  هل تشعر بالتعب </label>
+              <mat-radio-button id="radio" name="rad" value="oui" >نعم</mat-radio-button>
+              <mat-radio-button id="radio1" name="rad" value="non" >لا</mat-radio-button>
+              </div>
+              <div class="info-t1">
+        
+                 <label> هل تشكو من عدم وضوح الرؤية</label>
+                <mat-radio-button id="radio2" name="id1" value="id1" >نعم</mat-radio-button>
+                <mat-radio-button id="radio3" name="id1" value="id1" >لا</mat-radio-button>
+                </div>
+                <div class="info-t2">
+        
+                    <label> أعراظ أخرى</label>
+                   <textarea name="text" value="text" ></textarea>
+        
+                   </div>
+            <div class="app-dossier">
+              <label>أضيف المقالات والبيانات الطبية الخاصة بحالتك</label><br>
+              <input type="file" value=" Brows" style="
+              background: #ffffffff;
+              margin: 32px 106px;">
+            </div>
+        
+            <div class="app-information1">
+              <h1>معلومات المريض</h1>
+              <hr>
+              <br>
+              <div class="information-personnel">
+                <label>جنس</label>
+        <mat-radio-button name="sexe" id="radiof">أنثى</mat-radio-button>
+                 <mat-radio-button  name="sexe" id="radioh">ذكر</mat-radio-button>
+        
+              <br>
+              </div>
+              <div class="info-taille">
+                <label>الوزن</label> <input type="number" name="taille">
+              </div>
+              <div class="info-Longueur">
+                <label>الطول</label><input type="number" name="Longueur">
+              </div>
+        
+            </div>
+        
+        
+            <div class="app-information">
+              <h1>العلاجات المعتمدة حاليا</h1>
+              <hr>
+              <br>
+              <div class="information-personnel">
+                <label>العلاجات الخاصة بك إذا كنا لديك </label><br>
+                <textarea rows="5" style="width: 100%">
+        
+                  </textarea>
+                <br>
+              </div>
+        
+        
+            </div>
+        
+            <input type="submit" value="ارسل سؤال" class="btn-send"  routerLink='/accueil'>
+            <app-alerts></app-alerts>
+        
+        
+          </div>
+        </div>
+   
+  </div>
+</div>

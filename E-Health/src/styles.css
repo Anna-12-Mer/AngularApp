@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/*======================================================
+
+            Default values
+
+            Font family :            Lato
+
+             #FEFBFB    gry
+             #02B4FF
+             #E7A07F    creme
+             #F24E86    rose
+             #F8F8F8
+
+
+
+========================================================*/
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* Generic css*/
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+h3 {
+    color: #383838;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: bold;
+
+}
+.underline-title {
+    width: 30px;
+    height: 3px;
+    background-color: #61C0BF;
+    margin: 0 auto 30px auto;
+}
+/*======================================================
+                    Parallax
+========================================================*/
+
+.bg-parallax {
+    background-attachment: fixed;
+}
+
+/*======================================================
+                APROPOS NAV BAR
+=======================================================*/
+.navbar-apropos {
+    display: table-cell;
+    vertical-align: super;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+nav > li {
+    position: relative;
+    display: block;
+}
+.navbar-nav > li > a {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    font-style: normal;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #E7A07F;
+
+}
+#apropos ul {
+    list-style: none;
+}
+
+.navbar-nav > li.active > a {
+    color: #E7A07F;
+}
+.apropos-navbar {
+    padding-top: 80px ;
+    padding-bottom: 0px ;
+}

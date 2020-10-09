@@ -1,0 +1,261 @@
+/*=========================================
+            HEADER
+==========================================*/
+.navbar {
+    padding: 5px 0;
+    margin-bottom: 0;
+    width: 100%;
+    
+  }
+  .navbar-default[_ngcontent-c1] {
+    background-color: #17BFB5;
+    border: #17BFB5;
+}
+  .nav-top-button {
+    float: right;
+  }
+  #btn-inscrire {
+    color:  #000;
+    margin-right: 10px;
+    border-color: #EFD0CA;
+    width: 130px;
+    background-color:#EFD0CA;
+  }
+  #btn-inscrire:hover{
+    color:#f5f5f5;
+    background-color: #FF7B78
+  }
+  #btn-connecter {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+    width: 132px;
+    margin-right: 10px;
+  }
+  #btn-connecter:active {
+    color:#E7A07F;
+    background-color: #f5f5f5 ;
+  }
+  .navbar-default {
+    background-color: #f5f5f5;
+  }
+  
+  /* The dropdown container */
+  
+  
+  /* Dropdown button */
+  .dropdown a {
+    color: #777;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    font-style: normal;
+  }
+  
+  
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    font-style: normal;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  /*****S'INSCRIRE***/
+  .main {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  
+  .login-or {
+    position: relative;
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 10px;
+            margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+  }
+  .hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  h3 {
+    text-align: center;
+    line-height: 300%;
+  }
+  
+  
+  
+  #inscription-section {
+    background-color: #E0D4CC;
+    text-align: center;   
+  }
+  
+  .btn-inscription {
+    color: #fff;
+    background-color: #F24E86;
+  }
+  
+  @media (min-width: 768px){
+    .navbar-nav {
+      float: left;
+      margin: auto;
+      margin-left: -8%;
+  }
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: rgba(0,0,0,.87);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  margin-left: -15%;
+  width: 100%;
+  border: 0px solid rgba(0,0,0,.87);
+  padding: 16px;
+  height: 20px;
+  border-radius: 9px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: rgba(0,0,0,.87);;
+}
+
+.searchButton {
+  position: absolute;  
+  right: 40px;
+
+  width: 40px;
+  height: 33px;
+  border: 1px solid #efd0ca;
+  background: #efd0ca;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.app-profile {
+  height: 35px;
+  width: 185px;
+  background: #efd0ca;
+  border-radius: 9px;
+  float: left;
+  margin-left: 4%;
+  margin-top: 8px;
+}
+
+
+
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+  
+}
+
+.btn {
+  position: relative;
+
+  border: 0 !important;
+  &:focus { outline: 0; }
+  &:hover { top: 2px; }
+  &:active { top: 6px; }
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold !important;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.carousel-inner .item > img {
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
+}
+
+.carousel-caption{
+  text-align: center;
+
+}
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}

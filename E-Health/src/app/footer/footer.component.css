@@ -1,0 +1,48 @@
+
+  .app-basEcran{
+    background: #a59c9a;
+    width: 100%;
+    margin-right: -474px;
+    height:265px;
+    margin-top: -2px;
+  }
+  .app-basEcran h1{
+  
+  float: right;
+  margin-top: 61px;
+  margin-right: 190px;
+  }
+  .app-h1{
+    float: right;
+      margin-top: -2px;
+    margin-right: 190px;
+  }
+  .app-tel h1{
+    float: right;
+    margin-right: 220px
+  }
+  .app-tel h3{
+    float: right;
+      margin-top: 96px;
+      margin-right: -91px;}
+  
+  .app-mail h3{
+    float: right;
+    margin-top: 139px;
+    margin-right: -133px;}
+  
+    .app-fin{
+      float: right;
+      margin-top: 167px;
+      margin-right: -549px;
+    }
+    .app-fin h2{
+      color: #3e3c3c8c;
+    }
+    .img-drapo{
+      width: 42px;
+      margin-top: 188px;
+      margin-right: -326px;
+      border-radius: 7px;
+    }
+  
